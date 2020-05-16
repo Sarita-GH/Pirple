@@ -1,0 +1,139 @@
+/*Referencia propiedades CSS: https://www.w3c.es/Divulgacion/GuiasReferencia/CSS21/*/
+
+/*Tamaño-medio*/
+@media screen and (min-width:400px) and (max-width: 750px){
+body{
+    background-color: rgb(186, 218, 240);
+}
+p{
+    font-size: 20px;
+}
+p>span{
+    font-style: italic;
+}
+.p--red{
+    font-style: normal;
+    color: red;
+}
+.instrucciones__lista{
+    list-style-type: upper-roman;
+}
+ul{
+    list-style-image: url("https://mdn.mozillademos.org/files/11981/starsolid.gif");
+}
+li{
+    font-size: 15px;
+}
+h1{
+    padding-bottom: 10px;
+    font:bold;
+    text-decoration:underline;
+    text-align: center;
+}
+h2{
+    padding-bottom: 10px;
+}
+.receta__img--place{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+img{
+    width: 500px;
+    height: 350px;
+}
+}
+/*Tamaño-pequeño*/
+@media screen and (max-width: 400px) {
+    body{
+        background-color: rgb(182, 246, 248);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    p{
+        font-size: 20px;
+    }
+    p>span{
+        font-style: italic;
+    }
+    .p--red{
+        font-style: normal;
+        color: red;
+    }
+    h2{
+        text-align: center;
+    }
+    ul{
+        list-style-image: url("https://mdn.mozillademos.org/files/11981/starsolid.gif");
+    }
+    li{
+        font-size: 15px;
+    }
+    h1{
+        padding-bottom: 10px;
+        font:bold;
+        text-decoration:underline;
+        text-align: center;
+    }
+    .receta__img--place{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+    img{
+        width: 50%
+    }
+}
+
+/*Tamaño-grande*/
+@media screen and (min-width:750px){
+    body{
+        background-color: rgb(97, 247, 120); 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div{
+        display: flex;
+        width: 1000px;
+        flex-wrap: wrap;
+        
+    }
+    .ingredientes{
+        width: 400px;
+        
+    }
+    img{
+        width: 500px;
+        margin: 20px;
+        
+    }
+    .instrucciones{
+        width: 400px;
+        
+    }
+    p{
+        font-size: 20px;
+        background-color: rgb(151, 248, 167);
+        border-radius: 2px;
+        padding: 5px;
+    }
+    ul{
+        list-style-image: url("https://mdn.mozillademos.org/files/11981/starsolid.gif");
+    }
+    li{
+        font-size: 17px;
+    }
+    h1{
+        padding-bottom: 10px;
+        font:bold;
+        text-decoration:underline;
+        text-align: center;
+    }
+    h2{
+        padding-bottom: 10px;
+    }
+    
+    
+    }
